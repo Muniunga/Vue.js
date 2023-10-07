@@ -18,21 +18,21 @@
   </head>
   <body>
     <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="row">
-                <div id="app">
-                <h2>HitHub User Data</h2>
-                <input type="text" v-model="searchInput" />
-            <button v-on:click="fetchGitHubeUser" >Carregar Usuário</button>
+      <div class="row justify-content-md-center">
+        <div class="row">
+          <div id="app">
+            <h2>GitHub User Data</h2>
+            <input type="text" v-model="searchInput" />
+            <button v-on:click="fetchGitHubUser">Carregar Usuário</button>
 
             <div class="col">
-                <img v-bind:src="avatar_url" alt="Foto de perfil" />
+              <img v-bind:src="avatar_url" alt="Foto de perfil" />
             </div>
             <div class="col">
-                <strong>@{{ login}}</strong>
-                <h1>{{ name}}</h1>
-                <h1>{{ company}}</h1>
-                <span>{{ location}}</span>
+              <strong>@{{ login}}</strong>
+              <h1>{{ name}}</h1>
+              <h1>{{ company}}</h1>
+              <span>{{ location}}</span>
             </div>
           </div>
         </div>
